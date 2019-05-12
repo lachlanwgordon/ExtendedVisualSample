@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VisualExtension"
+    Padding="0,40,0,0"
+    Visual="Custom"
+    x:Class="VisualExtension.MainPage">
+    <ScrollView>
+        <StackLayout
+            Spacing="10">
+            <Label
+                Text="Visual Demo"
+                HorizontalOptions="Center" />
+            <Button
+                Text="Extended Material Button" />
+            <Entry
+                Placeholder="New Entry is pretty" />
+            <Button
+                Text="All Caps Material"
+                Visual="Material" />
+            <Button
+                Text="This button doesn't have visual"
+                Visual="default" />
+            <Editor
+                Placeholder="Editor from custom"
+                Text="This editor is rendered by the BarelyExtendedEntryRenderer, It doesn't have any thing changed other than the Visuals it is registered for."
+                HeightRequest="200" />
+            <Label
+                Text="Material Slider" />
+            <Slider
+                Visual="Material" />
+            <Label
+                Text="Classic Slider in CustomVisual" />
+            <Slider />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
