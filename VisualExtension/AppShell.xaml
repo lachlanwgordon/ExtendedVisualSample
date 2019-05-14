@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Visual="Material"
+    x:Class="VisualExtension.AppShell"
+    FlyoutBehavior="Disabled"
+    xmlns:pages="clr-namespace:VisualExtension.Pages">
+    <FlyoutItem>
+        <pages:FormPage Title="Material" Visual="Material"/>
+        <pages:FormPage Title="Default" Visual="Default"/>
+        <pages:FormPage Title="Custom Visual" Visual="CustomVisual"/>
+    </FlyoutItem>
+</Shell>

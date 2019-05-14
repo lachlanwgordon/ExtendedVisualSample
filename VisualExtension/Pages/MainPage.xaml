@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:VisualExtension"
     Padding="0,40,0,0"
     Visual="Custom"
-    x:Class="VisualExtension.MainPage">
+    x:Class="VisualExtension.Pages.MainPage">
     <ScrollView>
         <StackLayout
             Spacing="10">
@@ -31,7 +31,7 @@
             <Slider
                 Visual="Material" />
             <Label
-                Text="Classic Slider in CustomVisual" />
+                Text="Classic Slider" />
             <Slider />
         </StackLayout>
     </ScrollView>
