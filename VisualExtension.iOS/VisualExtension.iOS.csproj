@@ -72,6 +72,7 @@
     <Compile Include="Renderers\AnyCaseButtonRenderer.cs" />
     <Compile Include="Renderers\BarelyExtendedEntryRenderer.cs" />
     <Compile Include="Renderers\BarelyExtendedEditorRenderer.cs" />
+    <Compile Include="Renderers\TitledMaterialPickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -143,5 +144,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\building%403x.jpg" />
+    <BundleResource Include="Resources\building%402x.jpg" />
+    <BundleResource Include="Resources\building.jpg" />
   </ItemGroup>
 </Project>

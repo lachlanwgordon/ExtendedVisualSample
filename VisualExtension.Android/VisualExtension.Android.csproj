@@ -71,6 +71,7 @@
     <Compile Include="Renderers\AnyCaseButtonRenderer.cs" />
     <Compile Include="Renderers\BarelyExtendedEditorRenderer.cs" />
     <Compile Include="Renderers\BarelyExtendedEntryRenderer.cs" />
+    <Compile Include="Renderers\TitledMaterialPickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -94,6 +95,12 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\building.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\building.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\building.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\building.jpg" />
+    <AndroidResource Include="Resources\drawable-mdpi\building.jpg" />
+    <AndroidResource Include="Resources\drawable-ldpi\building.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -102,6 +109,8 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Renderers\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VisualExtension\VisualExtension.csproj">

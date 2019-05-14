@@ -13,25 +13,32 @@
             <ScrollView>
                 <StackLayout
                     Padding="5,0">
-                    <Label
-                        Margin="5"
-                        Text="Please fill out details to request an office hour" />
+                    <ActivityIndicator
+                        x:Name="Indicator"
+                        IsRunning="true" />
                     <Entry
-                        Placeholder="First Name" />
-                    <Entry
-                        Placeholder="Last Name" />
-                    <DatePicker />
-                    <TimePicker />
-                    <Label
-                        Text="Importance"
-                        Margin="5" />
-                    <Slider
-                        x:Name="ValueSlider"
-                        BindingContext="{x:Reference ValueStepper}"
-                        Value="{Binding Value}" />
-                    <Stepper
-                        x:Name="ValueStepper"
-                        Increment=".1" />
+                        Placeholder="Name" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <DatePicker
+                            HorizontalOptions="FillAndExpand" />
+                        <TimePicker
+                            HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            Text="Importance"
+                            Margin="5" />
+                        <Slider
+                            x:Name="ValueSlider"
+                            HorizontalOptions="FillAndExpand"
+                            BindingContext="{x:Reference ValueStepper}"
+                            Value="{Binding Value}" />
+                        <Stepper
+                            x:Name="ValueStepper"
+                            Increment=".1" />
+                    </StackLayout>
                     <Picker
                         ItemDisplayBinding="{Binding .}"
                         Title="Subject">
@@ -43,8 +50,9 @@
                                 <x:String>Product idea</x:String>
                             </x:Array>
                         </Picker.ItemsSource>
-                   </Picker>
-                    <Label Text="Location"/>
+                    </Picker>
+                    <Label
+                        Text="Location" />
                     <ScrollView
                         Orientation="Horizontal">
                         <StackLayout
@@ -66,7 +74,10 @@
                                                     Width="*" />
                                             </Grid.ColumnDefinitions>
                                             <Image
-                                                Source="http://lorempixel.com/400/400/city" />
+                                                HeightRequest="80"
+                                                WidthRequest="100"
+                                                Aspect="AspectFill"
+                                                Source="building.jpg" />
                                             <Label
                                                 Grid.Row="1"
                                                 Text="{Binding .}" />
@@ -81,27 +92,44 @@
                                     <x:String>Building 2</x:String>
                                     <x:String>Building 3</x:String>
                                     <x:String>Building 4</x:String>
+                                    <x:String>Building 5</x:String>
+                                    <x:String>Building 6</x:String>
+                                    <x:String>Building 7</x:String>
+                                    <x:String>Building 8</x:String>
+                                    <x:String>Building 9</x:String>
+                                    <x:String>Building 10</x:String>
                                 </x:Array>
                             </BindableLayout.ItemsSource>
                         </StackLayout>
                     </ScrollView>
                     <Editor
-                        HeightRequest="200"
+                        HeightRequest="50"
                         Placeholder="Comments" />
-                    <Button
-                        Text="Submit" />
-                    <Button
-                        Text="Cancel" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Button
+                            HorizontalOptions="FillAndExpand"
+                            Text="Submit" />
+                        <Button
+                            HorizontalOptions="FillAndExpand"
+                            Text="Cancel" />
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            VerticalTextAlignment="Center"
+                            Text="Form Progress" />
+                        <ProgressBar
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            BindingContext="{x:Reference ValueStepper}"
+                            Progress="{Binding Value}"
+                            HeightRequest="10" />
+                        <ActivityIndicator
+                            IsRunning="true" />
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
-            <Label
-                Text="Form Progress" />
-            <ProgressBar
-                BindingContext="{x:Reference ValueStepper}"
-                Progress="{Binding Value}"
-                HeightRequest="30" />
-            <ActivityIndicator
-                IsRunning="true" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

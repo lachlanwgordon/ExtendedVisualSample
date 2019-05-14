@@ -10,5 +10,6 @@
         <pages:FormPage Title="Material" Visual="Material"/>
         <pages:FormPage Title="Default" Visual="Default"/>
         <pages:FormPage Title="Custom Visual" Visual="CustomVisual"/>
+        <pages:SimplePage Title="Simple Page" Visual="CustomVisual"/>
     </FlyoutItem>
 </Shell>
