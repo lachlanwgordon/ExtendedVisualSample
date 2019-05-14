@@ -10,8 +10,98 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Button
-                Text="Button" />
+            <ScrollView>
+                <StackLayout
+                    Padding="5,0">
+                    <Label
+                        Margin="5"
+                        Text="Please fill out details to request an office hour" />
+                    <Entry
+                        Placeholder="First Name" />
+                    <Entry
+                        Placeholder="Last Name" />
+                    <DatePicker />
+                    <TimePicker />
+                    <Label
+                        Text="Importance"
+                        Margin="5" />
+                    <Slider
+                        x:Name="ValueSlider"
+                        BindingContext="{x:Reference ValueStepper}"
+                        Value="{Binding Value}" />
+                    <Stepper
+                        x:Name="ValueStepper"
+                        Increment=".1" />
+                    <Picker
+                        ItemDisplayBinding="{Binding .}"
+                        Title="Subject">
+                        <Picker.ItemsSource>
+                            <x:Array
+                                Type="{x:Type x:String}">
+                                <x:String>Tech support</x:String>
+                                <x:String>Just a chat</x:String>
+                                <x:String>Product idea</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                   </Picker>
+                    <Label Text="Location"/>
+                    <ScrollView
+                        Orientation="Horizontal">
+                        <StackLayout
+                            Orientation="Horizontal">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame
+                                        Margin="5"
+                                        Padding="5">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition
+                                                    Height="Auto" />
+                                                <RowDefinition
+                                                    Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition
+                                                    Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Image
+                                                Source="http://lorempixel.com/400/400/city" />
+                                            <Label
+                                                Grid.Row="1"
+                                                Text="{Binding .}" />
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                            <BindableLayout.ItemsSource>
+                                <x:Array
+                                    Type="{x:Type x:String}">
+                                    <x:String>Building 1</x:String>
+                                    <x:String>Building 2</x:String>
+                                    <x:String>Building 3</x:String>
+                                    <x:String>Building 4</x:String>
+                                </x:Array>
+                            </BindableLayout.ItemsSource>
+                        </StackLayout>
+                    </ScrollView>
+                    <Editor
+                        HeightRequest="200"
+                        Placeholder="Comments" />
+                    <Button
+                        Text="Submit" />
+                    <Button
+                        Text="Cancel" />
+                </StackLayout>
+            </ScrollView>
+            <Label
+                Text="Form Progress" />
+            <ProgressBar
+                BindingContext="{x:Reference ValueStepper}"
+                Progress="{Binding Value}"
+                HeightRequest="30" />
+            <ActivityIndicator
+                IsRunning="true" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

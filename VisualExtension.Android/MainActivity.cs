@@ -21,6 +21,7 @@ namespace VisualExtension.Droid
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            Forms.SetFlags("Shell_Experimental");
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FormsMaterial.Init(this, savedInstanceState);
             LoadApplication(new App());

@@ -24,7 +24,7 @@ namespace VisualExtension.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Xamarin.Calabash.Start();
-            Forms.SetFlags("Shell_Experimental");
+            Forms.SetFlags("Shell_Experimental", "CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             FormsMaterial.Init();
             LoadApplication(new App());
