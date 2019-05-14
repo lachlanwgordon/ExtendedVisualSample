@@ -103,7 +103,6 @@
                         </StackLayout>
                     </ScrollView>
                     <Editor
-                        HeightRequest="50"
                         Placeholder="Comments" />
                     <StackLayout
                         Orientation="Horizontal">
