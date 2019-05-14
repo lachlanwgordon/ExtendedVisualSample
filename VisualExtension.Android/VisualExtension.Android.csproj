@@ -72,6 +72,13 @@
     <Compile Include="Renderers\BarelyExtendedEditorRenderer.cs" />
     <Compile Include="Renderers\BarelyExtendedEntryRenderer.cs" />
     <Compile Include="Renderers\TitledMaterialPickerRenderer.cs" />
+    <Compile Include="Renderers\TitledMaterialDatePickerRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialSliderRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialStepperRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialTimePickerRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialFrameRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialProgressBarRenderer.cs" />
+    <Compile Include="Renderers\ExtendedMaterialActivityIndicatorRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
