@@ -107,11 +107,9 @@
                     <StackLayout
                         Orientation="Horizontal">
                         <Button
-                            Visual="Custom"
                             HorizontalOptions="FillAndExpand"
                             Text="Submit" />
                         <Button
-                            Visual="Custom"
                             HorizontalOptions="FillAndExpand"
                             Text="Cancel" />
                     </StackLayout>

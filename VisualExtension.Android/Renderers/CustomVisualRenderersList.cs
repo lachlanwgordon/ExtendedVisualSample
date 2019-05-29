@@ -16,8 +16,5 @@ namespace VisualExtension.Droid.Renderers
 {
     public class CustomVisualRenderersList
     {
-        public CustomVisualRenderersList()
-        {
-        }
     }
 }
