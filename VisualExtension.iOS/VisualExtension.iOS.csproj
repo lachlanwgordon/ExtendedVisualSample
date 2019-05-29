@@ -70,16 +70,8 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\AnyCaseButtonRenderer.cs" />
-    <Compile Include="Renderers\BarelyExtendedEntryRenderer.cs" />
-    <Compile Include="Renderers\BarelyExtendedEditorRenderer.cs" />
     <Compile Include="Renderers\TitledMaterialPickerRenderer.cs" />
-    <Compile Include="Renderers\TitledMaterialDatePickerRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialSliderRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialStepperRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialTimePickerRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialFrameRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialProgressBarRenderer.cs" />
-    <Compile Include="Renderers\ExtendedMaterialActivityIndicatorRenderer.cs" />
+    <Compile Include="Renderers\CustomVisualRenderersList.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
