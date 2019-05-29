@@ -107,25 +107,23 @@
                     <StackLayout
                         Orientation="Horizontal">
                         <Button
+                            Visual="Custom"
                             HorizontalOptions="FillAndExpand"
                             Text="Submit" />
                         <Button
+                            Visual="Custom"
                             HorizontalOptions="FillAndExpand"
                             Text="Cancel" />
                     </StackLayout>
                     <StackLayout
                         Orientation="Horizontal">
                         <Label
-                            VerticalTextAlignment="Center"
                             Text="Form Progress" />
                         <ProgressBar
                             HorizontalOptions="FillAndExpand"
-                            VerticalOptions="Center"
                             BindingContext="{x:Reference ValueStepper}"
                             Progress="{Binding Value}"
                             HeightRequest="10" />
-                        <ActivityIndicator
-                            IsRunning="true" />
                     </StackLayout>
                 </StackLayout>
             </ScrollView>

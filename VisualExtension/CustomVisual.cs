@@ -8,8 +8,5 @@ namespace VisualExtension
     /// </summary>
     public class CustomVisual : IVisual
     {
-        public CustomVisual()
-        {
-        }
     }
 }
