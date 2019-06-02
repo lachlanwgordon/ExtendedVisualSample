@@ -10,5 +10,6 @@
         <pages:FormPage Title="Default" Visual="Default"/>
         <pages:FormPage Title="Material" Visual="Material"/>
         <pages:FormPage Title="Custom Visual" Visual="Custom"/>
+        <pages:FormPage Title="My Visual" Visual="My"/>
     </ShellItem>
 </Shell>

@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -10,12 +11,14 @@ namespace VisualExtension.Pages
         public FormPage()
         {
             InitializeComponent();
+
         }
         protected override async void OnAppearing()
         {
             base.OnAppearing();
             await Task.Delay(3000);
             Indicator.IsVisible = false;
+
         }
     }
 }

@@ -3,10 +3,11 @@ using Android.Content;
 using VisualExtension;
 using VisualExtension.Droid.Renderers;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Material.Android;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(Button), typeof(AnyCaseButtonRenderer), new[] { typeof(CustomVisual) })]
+//[assembly: ExportRenderer(typeof(Button), typeof(AnyCaseButtonRenderer), new[] { typeof(CustomVisual) })]
 namespace VisualExtension.Droid.Renderers
 {
     public class AnyCaseButtonRenderer : MaterialButtonRenderer
@@ -27,5 +28,14 @@ namespace VisualExtension.Droid.Renderers
                 Control.SetAllCaps(false);
             }
         }
+
+        public static void VisualInit()
+        {
+            var export = new ExportRendererAttribute(typeof(Button), typeof(AnyCaseButtonRenderer), new[] { typeof(CustomVisual) });
+            Xamarin.Forms.Internals.Registrar.RegisterRenderers();
+
+        }
     }
+
+    
 }

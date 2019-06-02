@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using gw;
 using UIKit;
+using VisualExtension.iOS.Renderers;
 using Xamarin.Forms;
 
 namespace VisualExtension.iOS
@@ -26,10 +28,15 @@ namespace VisualExtension.iOS
             Xamarin.Calabash.Start();
             Forms.SetFlags("Shell_Experimental", "CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
+
             FormsMaterial.Init();
+            AnyCaseButtonRenderer.VisualInit(typeof(AnyCaseButtonRenderer));
             LoadApplication(new App());
 
+            var visual = new MyVisual();//Include this to prevent the visual from being linked away.
             return base.FinishedLaunching(app, options);
+
+
         }
     }
 }

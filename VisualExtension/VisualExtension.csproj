@@ -12,8 +12,9 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="LiveXAML" Version="2.1.72" />
+    <PackageReference Include="gw" Version="1.1.3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Pages\SimplePage.xaml" />

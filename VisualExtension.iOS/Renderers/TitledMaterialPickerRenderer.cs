@@ -5,7 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Material.iOS;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(Picker), typeof(TitledMaterialPickerRenderer), new[] { typeof(CustomVisual) })]
+//[assembly: ExportRenderer(typeof(Picker), typeof(TitledMaterialPickerRenderer), new[] { typeof(CustomVisual) })]
 namespace VisualExtension.iOS.Renderers
 {
     public class TitledMaterialPickerRenderer : MaterialPickerRenderer
