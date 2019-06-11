@@ -16,8 +16,16 @@
                     <ActivityIndicator
                         x:Name="Indicator"
                         IsRunning="true" />
-                    <Entry
-                        Placeholder="Name" />
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Entry
+                            HorizontalOptions="FillAndExpand"
+                            Placeholder="Name" />
+                        <CheckBox />
+                        <Label
+                            Text="Remember Me"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
                     <StackLayout
                         Orientation="Horizontal">
                         <DatePicker

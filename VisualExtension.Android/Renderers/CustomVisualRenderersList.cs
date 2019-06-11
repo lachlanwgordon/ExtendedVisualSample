@@ -12,9 +12,11 @@ using Xamarin.Forms.Material.Android;
 [assembly: ExportRenderer(typeof(Stepper), typeof(MaterialStepperRenderer), new[] { typeof(CustomVisual) })]
 [assembly: ExportRenderer(typeof(DatePicker), typeof(MaterialDatePickerRenderer), new[] { typeof(CustomVisual) })]
 [assembly: ExportRenderer(typeof(TimePicker), typeof(MaterialTimePickerRenderer), new[] { typeof(CustomVisual) })]
+[assembly: ExportRenderer(typeof(CheckBox), typeof(MaterialCheckBoxRenderer), new[] { typeof(CustomVisual) })]
 namespace VisualExtension.Droid.Renderers
 {
     public class CustomVisualRenderersList
     {
+        
     }
 }
