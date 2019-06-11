@@ -22,6 +22,7 @@ namespace VisualExtension.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Forms.SetFlags("Shell_Experimental");
+            Lachlan.Visual.LachlanVisual.Init();
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FormsMaterial.Init(this, savedInstanceState);
             LoadApplication(new App());

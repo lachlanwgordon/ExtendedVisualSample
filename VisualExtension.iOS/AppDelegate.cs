@@ -25,6 +25,7 @@ namespace VisualExtension.iOS
         {
             Xamarin.Calabash.Start();
             Forms.SetFlags("Shell_Experimental", "CollectionView_Experimental");
+            Lachlan.Visual.LachlanVisual.Init();
             global::Xamarin.Forms.Forms.Init();
             FormsMaterial.Init();
             LoadApplication(new App());
