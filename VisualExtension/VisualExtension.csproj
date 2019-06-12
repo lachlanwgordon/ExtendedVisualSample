@@ -14,7 +14,7 @@
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.483098-pre1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
     <PackageReference Include="LiveXAML" Version="2.1.72" />
-    <PackageReference Include="Lachlan.Visual" Version="1.14.0" />
+    <PackageReference Include="Lachlan.Visual" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Pages\SimplePage.xaml" />
